@@ -560,7 +560,7 @@ enum MangosStrings
     LANG_NPCINFO_VENDOR                 = 545,
     LANG_NPCINFO_TRAINER                = 546,
     LANG_NPCINFO_DUNGEON_ID             = 547,
-    // 1030, used in other branch
+    LANG_NPCINFO_ACTIVE_VISIBILITY      = 1030,
     LANG_NPCINFO_EQUIPMENT              = 1031,
     LANG_NPCINFO_INHABIT_TYPE           = 1032,
     LANG_NPCINFO_ARMOR                  = 1033,
