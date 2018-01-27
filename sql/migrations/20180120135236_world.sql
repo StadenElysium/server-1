@@ -8,7 +8,6 @@ IF v=0 THEN
 INSERT INTO `migrations` VALUES ('20180120135236');
 -- Add your query below.
 
-
 DELETE FROM `game_event` WHERE `entry`=87;
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`, `hardcoded`, `disabled`, `patch_min`, `patch_max`) VALUES
 (87, '2018-01-01 07:00:00', '2020-01-01 08:00:00', 1440, 60, 0, 'Childeren of Goldshire', 0, 0, 0, 10);
@@ -29,11 +28,9 @@ INSERT INTO `creature_groups` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `fla
 (79638, 79642, 3, 310, 1), -- Lisa
 (79638, 79643, 3, 50,  1); -- Aaron
 
--- STORMWIND_PATH
-SET @ENTRY := 805;
+SET @ENTRY := 79638;
 DELETE FROM `creature_movement` WHERE `id`=@ENTRY;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`) VALUES
-(@ENTRY,0  ,-4984.79 , -1169.45,501.658, 0),
 (@ENTRY,1  ,-9372.823,-66.29554,69.201859, 0),
 (@ENTRY,2  ,-9375.251,-70.71793,69.201691, 0),
 (@ENTRY,3  ,-9377.161,-72.19738,69.198997, 0),
@@ -90,7 +87,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@ENTRY,54 ,-9088.044,418.7169,92.44129, 0), -- 07:01:49
 (@ENTRY,55 ,-9058.086,439.64,93.14257, 0), -- 07:01:52
 (@ENTRY,56 ,-9045.07,450.092,93.28775, 0), -- 07:01:54
-(@ENTRY,57 ,-9040.674,453.6961,93.05584, 660), -- STORMWIND_WAYPOINT
+(@ENTRY,57 ,-9040.674,453.6961,93.05584, 660000), -- STORMWIND_WAYPOINT
 (@ENTRY,58 ,-9057.086,442.696,93.05582, 0), -- 07:13:02
 (@ENTRY,59 ,-9074.805,431.4119,93.05582, 0), -- 07:13:03
 (@ENTRY,60 ,-9077.455,426.727,92.54478, 0), -- 07:13:05
@@ -122,7 +119,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@ENTRY,86 ,-9433.703,74.28316,56.51966, 0), -- 07:14:10
 (@ENTRY,87 ,-9435.221,73.19769,56.34148, 0), -- 07:14:13
 (@ENTRY,88 ,-9448.541,67.65511,56.51829, 0), -- 07:14:14
-(@ENTRY,89 ,-9460.035,63.37641,55.895, 900), -- GOLDSHIRE_WAYPOINT
+(@ENTRY,89 ,-9460.035,63.37641,55.895, 900000), -- GOLDSHIRE_WAYPOINT
 (@ENTRY,90 ,-9445.364,58.4987,55.97727, 0), -- 07:31:27
 (@ENTRY,91 ,-9445.032,58.55785,56.2136, 0), -- 07:31:28
 (@ENTRY,92 ,-9427.596,41.84236,57.21891, 0), -- 07:31:30
@@ -144,7 +141,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@ENTRY,108,-9164.87,-117.8934,73.10243, 0), -- 07:32:10
 (@ENTRY,109,-9164.276,-118.5964,73.10841, 0), -- 07:32:11
 (@ENTRY,110,-9157.389,-130.045,74.83447, 0), -- 07:32:12
-(@ENTRY,111,-9155.88,-137.6466,74.73592, 360), -- WOODS_WAYPOINT
+(@ENTRY,111,-9155.88,-137.6466,74.73592, 360000), -- WOODS_WAYPOINT
 (@ENTRY,112,-9158.411,-126.9952,74.33096, 0), -- 07:38:14
 (@ENTRY,113,-9161.936,-122.2632,73.48005, 0), -- 07:38:18
 (@ENTRY,114,-9171.188,-116.403,72.13133, 0), -- 07:38:23
